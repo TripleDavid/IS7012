@@ -1,22 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Data\\UC\\IS 7012\\IS7012\\Week 2\\RecruitCatDickendd\\",
+  "WorkspaceRootPath": "D:\\Data\\UC\\IS 7012\\IS7012\\IS7012\\RecruitCatDickendd\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{700EF566-03D9-4243-92DC-DCD0201F7271}|RecruitCatDickendd\\RecruitCatDickendd.csproj|d:\\data\\uc\\is 7012\\is7012\\week 2\\recruitcatdickendd\\recruitcatdickendd\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{700EF566-03D9-4243-92DC-DCD0201F7271}|RecruitCatDickendd\\RecruitCatDickendd.csproj|d:\\data\\uc\\is 7012\\is7012\\is7012\\recruitcatdickendd\\recruitcatdickendd\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{700EF566-03D9-4243-92DC-DCD0201F7271}|RecruitCatDickendd\\RecruitCatDickendd.csproj|solutionrelative:recruitcatdickendd\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{700EF566-03D9-4243-92DC-DCD0201F7271}|RecruitCatDickendd\\RecruitCatDickendd.csproj|d:\\data\\uc\\is 7012\\is7012\\week 2\\recruitcatdickendd\\recruitcatdickendd\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "AbsoluteMoniker": "D:0:0:{700EF566-03D9-4243-92DC-DCD0201F7271}|RecruitCatDickendd\\RecruitCatDickendd.csproj|d:\\data\\uc\\is 7012\\is7012\\is7012\\recruitcatdickendd\\recruitcatdickendd\\pages\\ourteam.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{700EF566-03D9-4243-92DC-DCD0201F7271}|RecruitCatDickendd\\RecruitCatDickendd.csproj|solutionrelative:recruitcatdickendd\\pages\\ourteam.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{700EF566-03D9-4243-92DC-DCD0201F7271}|RecruitCatDickendd\\RecruitCatDickendd.csproj|d:\\data\\uc\\is 7012\\is7012\\is7012\\recruitcatdickendd\\recruitcatdickendd\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{700EF566-03D9-4243-92DC-DCD0201F7271}|RecruitCatDickendd\\RecruitCatDickendd.csproj|solutionrelative:recruitcatdickendd\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{700EF566-03D9-4243-92DC-DCD0201F7271}|RecruitCatDickendd\\RecruitCatDickendd.csproj|d:\\data\\uc\\is 7012\\is7012\\week 2\\recruitcatdickendd\\recruitcatdickendd\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{700EF566-03D9-4243-92DC-DCD0201F7271}|RecruitCatDickendd\\RecruitCatDickendd.csproj|d:\\data\\uc\\is 7012\\is7012\\is7012\\recruitcatdickendd\\recruitcatdickendd\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{700EF566-03D9-4243-92DC-DCD0201F7271}|RecruitCatDickendd\\RecruitCatDickendd.csproj|solutionrelative:recruitcatdickendd\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{700EF566-03D9-4243-92DC-DCD0201F7271}|RecruitCatDickendd\\RecruitCatDickendd.csproj|d:\\data\\uc\\is 7012\\is7012\\week 2\\recruitcatdickendd\\recruitcatdickendd\\pages\\ourteam.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{700EF566-03D9-4243-92DC-DCD0201F7271}|RecruitCatDickendd\\RecruitCatDickendd.csproj|solutionrelative:recruitcatdickendd\\pages\\ourteam.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,63 +26,63 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Data\\UC\\IS 7012\\IS7012\\Week 2\\RecruitCatDickendd\\RecruitCatDickendd\\Pages\\Index.cshtml",
+              "DocumentMoniker": "D:\\Data\\UC\\IS 7012\\IS7012\\IS7012\\RecruitCatDickendd\\RecruitCatDickendd\\Pages\\Index.cshtml",
               "RelativeDocumentMoniker": "RecruitCatDickendd\\Pages\\Index.cshtml",
-              "ToolTip": "D:\\Data\\UC\\IS 7012\\IS7012\\Week 2\\RecruitCatDickendd\\RecruitCatDickendd\\Pages\\Index.cshtml",
+              "ToolTip": "D:\\Data\\UC\\IS 7012\\IS7012\\IS7012\\RecruitCatDickendd\\RecruitCatDickendd\\Pages\\Index.cshtml",
               "RelativeToolTip": "RecruitCatDickendd\\Pages\\Index.cshtml",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAAC8AAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAAAGAAAABnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-09-06T16:25:58.607Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "OurTeam.cshtml",
-              "DocumentMoniker": "D:\\Data\\UC\\IS 7012\\IS7012\\Week 2\\RecruitCatDickendd\\RecruitCatDickendd\\Pages\\OurTeam.cshtml",
+              "DocumentMoniker": "D:\\Data\\UC\\IS 7012\\IS7012\\IS7012\\RecruitCatDickendd\\RecruitCatDickendd\\Pages\\OurTeam.cshtml",
               "RelativeDocumentMoniker": "RecruitCatDickendd\\Pages\\OurTeam.cshtml",
-              "ToolTip": "D:\\Data\\UC\\IS 7012\\IS7012\\Week 2\\RecruitCatDickendd\\RecruitCatDickendd\\Pages\\OurTeam.cshtml",
+              "ToolTip": "D:\\Data\\UC\\IS 7012\\IS7012\\IS7012\\RecruitCatDickendd\\RecruitCatDickendd\\Pages\\OurTeam.cshtml",
               "RelativeToolTip": "RecruitCatDickendd\\Pages\\OurTeam.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAGAAAAAAAAAA==",
+              "ViewState": "AgIAACAAAAAAAAAAAAAiwDkAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-09-06T17:17:44.046Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\Data\\UC\\IS 7012\\IS7012\\Week 2\\RecruitCatDickendd\\RecruitCatDickendd\\Pages\\Shared\\_Layout.cshtml",
+              "DocumentMoniker": "D:\\Data\\UC\\IS 7012\\IS7012\\IS7012\\RecruitCatDickendd\\RecruitCatDickendd\\Pages\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "RecruitCatDickendd\\Pages\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\Data\\UC\\IS 7012\\IS7012\\Week 2\\RecruitCatDickendd\\RecruitCatDickendd\\Pages\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\Data\\UC\\IS 7012\\IS7012\\IS7012\\RecruitCatDickendd\\RecruitCatDickendd\\Pages\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "RecruitCatDickendd\\Pages\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-09-06T16:25:45.056Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "site.css",
-              "DocumentMoniker": "D:\\Data\\UC\\IS 7012\\IS7012\\Week 2\\RecruitCatDickendd\\RecruitCatDickendd\\wwwroot\\css\\site.css",
+              "DocumentMoniker": "D:\\Data\\UC\\IS 7012\\IS7012\\IS7012\\RecruitCatDickendd\\RecruitCatDickendd\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "RecruitCatDickendd\\wwwroot\\css\\site.css",
-              "ToolTip": "D:\\Data\\UC\\IS 7012\\IS7012\\Week 2\\RecruitCatDickendd\\RecruitCatDickendd\\wwwroot\\css\\site.css",
+              "ToolTip": "D:\\Data\\UC\\IS 7012\\IS7012\\IS7012\\RecruitCatDickendd\\RecruitCatDickendd\\wwwroot\\css\\site.css",
               "RelativeToolTip": "RecruitCatDickendd\\wwwroot\\css\\site.css",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABkAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAAwHIAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2024-09-06T16:25:52.563Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             }
           ]
         }

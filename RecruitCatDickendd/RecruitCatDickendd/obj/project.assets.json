@@ -343,11 +343,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Data\\UC\\IS 7012\\IS7012\\RecruitCatDickendd\\RecruitCatDickendd\\RecruitCatDickendd.csproj",
+      "projectUniqueName": "D:\\Data\\UC\\IS 7012\\IS7012\\IS7012\\RecruitCatDickendd\\RecruitCatDickendd\\RecruitCatDickendd.csproj",
       "projectName": "RecruitCatDickendd",
-      "projectPath": "D:\\Data\\UC\\IS 7012\\IS7012\\RecruitCatDickendd\\RecruitCatDickendd\\RecruitCatDickendd.csproj",
+      "projectPath": "D:\\Data\\UC\\IS 7012\\IS7012\\IS7012\\RecruitCatDickendd\\RecruitCatDickendd\\RecruitCatDickendd.csproj",
       "packagesPath": "C:\\Users\\David Dennis Dickens\\.nuget\\packages\\",
-      "outputPath": "D:\\Data\\UC\\IS 7012\\IS7012\\RecruitCatDickendd\\RecruitCatDickendd\\obj\\",
+      "outputPath": "D:\\Data\\UC\\IS 7012\\IS7012\\IS7012\\RecruitCatDickendd\\RecruitCatDickendd\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

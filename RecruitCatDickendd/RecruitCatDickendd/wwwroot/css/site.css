@@ -5,6 +5,11 @@ main {
 body {
     margin-bottom: 60px;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #bbd6dc5c;
+}
+
+ul {
+    text-align: left;
 }
 
 h1 {
@@ -15,6 +20,7 @@ h1 {
 h2 {
     text-align: center;
     color: #00b4d8;
+    padding-top: 40px;
 }
 
 h3 {
@@ -76,3 +82,50 @@ hr {
     width: 100%;
     visibility: visible;
 }
+
+.card {
+    background-color: #00b4d846;
+    border: 2px solid;
+    border-color: #023e8aa1;
+    border-radius: 30px;
+}
+
+.card-img-top {
+    border-radius: 30px;
+}
+
+.btn {
+    background-color: #023e8abe;
+}
+
+.btn:hover {
+    background-color: #023e8aa1;
+}
+
+.accordion {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.accordion-item {
+    border-bottom: 1px solid #ccc;
+}
+
+.accordion-header {
+    background-color: #023e8a21;
+}
+
+.accordion-button {
+    color: #333;
+    font-weight: bold;
+}
+
+    .accordion-button:not(.collapsed) {
+        background-color: #023e8aa1;
+        color: #fff;
+    }
+
+.accordion-collapse {
+    padding: 1rem;
+}
+
