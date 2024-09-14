@@ -21,7 +21,7 @@ namespace RecruitCatDickendd.Pages.Companies
 
         public IActionResult OnGet()
         {
-        ViewData["IndustryId"] = new SelectList(_context.Set<Industry>(), "IndustryId", "IndustryId");
+        ViewData["IndustryId"] = new SelectList(_context.Industry, "IndustryId", "IndustryId");
             return Page();
         }
 

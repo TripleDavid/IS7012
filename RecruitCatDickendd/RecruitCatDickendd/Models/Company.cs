@@ -9,9 +9,9 @@
         public decimal SalaryMaximum { get; set; }
         public DateTime? StartDate { get; set; }
         public string Location { get; set; }
-        public List<Candidate> Candidates { get; set; }
-        public Industry Industry { get; set; }
-        public int IndustryId { get; set; }
+        public List<Candidate>? Candidates { get; set; }
+        public Industry? Industry { get; set; }
+        public int? IndustryId { get; set; }
         public decimal? SigningBonus { get; set; }
 
     }

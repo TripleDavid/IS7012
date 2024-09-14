@@ -9,12 +9,12 @@
         public bool HasDegree { get; set; }
         public decimal TargetSalary { get; set; }
         public DateTime? StartDate { get; set; }
-        public JobTitle JobTitle { get; set; }
-        public int JobTitleId { get; set; }
-        public Company Company { get; set; }
+        public JobTitle? JobTitle { get; set; }
+        public int? JobTitleId { get; set; }
+        public Company? Company { get; set; }
         public int? CompanyId { get; set; }
-        public Industry Industry { get; set; }
-        public int IndustryId { get; set; }
+        public Industry? Industry { get; set; }
+        public int? IndustryId { get; set; }
         public bool IsEmployed { get; set; }
         public bool WillRelocate { get; set; }
         public DateTime JobSearchStartDate { get; set; }
