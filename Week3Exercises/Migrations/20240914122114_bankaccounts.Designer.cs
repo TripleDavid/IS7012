@@ -12,8 +12,8 @@ using Week3Exercises.Data;
 namespace Week3Exercises.Migrations
 {
     [DbContext(typeof(Week3ExercisesContext))]
-    [Migration("20240913125255_AccountHolders")]
-    partial class AccountHolders
+    [Migration("20240914122114_bankaccounts")]
+    partial class bankaccounts
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -33,10 +33,10 @@ namespace Week3Exercises.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("AccountHolderId"));
 
-                    b.Property<DateTime>("DateOfBirth")
+                    b.Property<DateTime>("Birthdate")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("EmailAddress")
+                    b.Property<string>("Email")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -48,9 +48,8 @@ namespace Week3Exercises.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("PhoneNumber")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<decimal>("Salary")
+                        .HasColumnType("decimal(18,2)");
 
                     b.HasKey("AccountHolderId");
 
@@ -65,7 +64,7 @@ namespace Week3Exercises.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("BankAccountId"));
 
-                    b.Property<int>("AccountHolderId")
+                    b.Property<int?>("AccountHolderId")
                         .HasColumnType("int");
 
                     b.Property<string>("AccountName")
@@ -76,7 +75,7 @@ namespace Week3Exercises.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<decimal?>("Balance")
+                    b.Property<decimal>("CurrentBalance")
                         .HasColumnType("decimal(18,2)");
 
                     b.Property<bool>("IsActive")
@@ -89,20 +88,80 @@ namespace Week3Exercises.Migrations
                     b.ToTable("BankAccount");
                 });
 
+            modelBuilder.Entity("Week3Exercises.Models.Director", b =>
+                {
+                    b.Property<int>("DirectorId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("DirectorId"));
+
+                    b.Property<DateTime>("DateOfBirth")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("DirectorId");
+
+                    b.ToTable("Director");
+                });
+
+            modelBuilder.Entity("Week3Exercises.Models.Movie", b =>
+                {
+                    b.Property<int>("MovieId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("MovieId"));
+
+                    b.Property<decimal>("BoxOfficeReceipts")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<int?>("DirectorId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ReleaseYear")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("MovieId");
+
+                    b.HasIndex("DirectorId");
+
+                    b.ToTable("Movie");
+                });
+
             modelBuilder.Entity("Week3Exercises.Models.BankAccount", b =>
                 {
                     b.HasOne("Week3Exercises.Models.AccountHolder", "AccountHolder")
                         .WithMany("BankAccounts")
-                        .HasForeignKey("AccountHolderId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("AccountHolderId");
 
                     b.Navigation("AccountHolder");
+                });
+
+            modelBuilder.Entity("Week3Exercises.Models.Movie", b =>
+                {
+                    b.HasOne("Week3Exercises.Models.Director", "Director")
+                        .WithMany("Movies")
+                        .HasForeignKey("DirectorId");
+
+                    b.Navigation("Director");
                 });
 
             modelBuilder.Entity("Week3Exercises.Models.AccountHolder", b =>
                 {
                     b.Navigation("BankAccounts");
+                });
+
+            modelBuilder.Entity("Week3Exercises.Models.Director", b =>
+                {
+                    b.Navigation("Movies");
                 });
 #pragma warning restore 612, 618
         }

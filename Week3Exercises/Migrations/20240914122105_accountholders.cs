@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Week3Exercises.Migrations
 {
     /// <inheritdoc />
-    public partial class AccountHolders : Migration
+    public partial class accountholders : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -19,9 +19,9 @@ namespace Week3Exercises.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     FirstName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     LastName = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    DateOfBirth = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    PhoneNumber = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    EmailAddress = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    Birthdate = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    Email = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Salary = table.Column<decimal>(type: "decimal(18,2)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -35,10 +35,10 @@ namespace Week3Exercises.Migrations
                     BankAccountId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     AccountNumber = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    CurrentBalance = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
                     AccountName = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Balance = table.Column<decimal>(type: "decimal(18,2)", nullable: true),
                     IsActive = table.Column<bool>(type: "bit", nullable: false),
-                    AccountHolderId = table.Column<int>(type: "int", nullable: false)
+                    AccountHolderId = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -47,8 +47,7 @@ namespace Week3Exercises.Migrations
                         name: "FK_BankAccount_AccountHolder_AccountHolderId",
                         column: x => x.AccountHolderId,
                         principalTable: "AccountHolder",
-                        principalColumn: "AccountHolderId",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "AccountHolderId");
                 });
 
             migrationBuilder.CreateIndex(

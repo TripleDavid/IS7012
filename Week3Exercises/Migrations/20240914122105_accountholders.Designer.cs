@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Week3Exercises.Data;
 
@@ -11,9 +12,11 @@ using Week3Exercises.Data;
 namespace Week3Exercises.Migrations
 {
     [DbContext(typeof(Week3ExercisesContext))]
-    partial class Week3ExercisesContextModelSnapshot : ModelSnapshot
+    [Migration("20240914122105_accountholders")]
+    partial class accountholders
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

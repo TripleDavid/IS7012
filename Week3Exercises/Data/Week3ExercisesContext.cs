@@ -14,6 +14,9 @@ namespace Week3Exercises.Data
         {
         }
 
+        public DbSet<Week3Exercises.Models.Director> Director { get; set; } = default!;
+        public DbSet<Week3Exercises.Models.Movie> Movie { get; set; } = default!;
         public DbSet<Week3Exercises.Models.AccountHolder> AccountHolder { get; set; } = default!;
+        public DbSet<Week3Exercises.Models.BankAccount> BankAccount { get; set; } = default!;
     }
 }
