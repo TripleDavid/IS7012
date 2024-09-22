@@ -35,16 +35,18 @@ namespace RecruitCatDickendd.Migrations
 
                     b.Property<string>("CurrentTitle")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.Property<string>("FirstName")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.Property<bool>("HasDegree")
                         .HasColumnType("bit");
 
-                    b.Property<int>("IndustryId")
+                    b.Property<int?>("IndustryId")
                         .HasColumnType("int");
 
                     b.Property<bool>("IsEmployed")
@@ -53,12 +55,13 @@ namespace RecruitCatDickendd.Migrations
                     b.Property<DateTime>("JobSearchStartDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("JobTitleId")
+                    b.Property<int?>("JobTitleId")
                         .HasColumnType("int");
 
                     b.Property<string>("LastName")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.Property<DateTime?>("StartDate")
                         .HasColumnType("datetime2");
@@ -93,24 +96,19 @@ namespace RecruitCatDickendd.Migrations
 
                     b.Property<string>("CompanyName")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.Property<int>("IndustryId")
                         .HasColumnType("int");
 
+                    b.Property<int>("JobTitleId")
+                        .HasColumnType("int");
+
                     b.Property<string>("Location")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("PositionName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<decimal>("SalaryMaximum")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.Property<decimal>("SalaryMinimum")
-                        .HasColumnType("decimal(18,2)");
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.Property<decimal?>("SigningBonus")
                         .HasColumnType("decimal(18,2)");
@@ -121,6 +119,8 @@ namespace RecruitCatDickendd.Migrations
                     b.HasKey("CompanyId");
 
                     b.HasIndex("IndustryId");
+
+                    b.HasIndex("JobTitleId");
 
                     b.ToTable("Company");
                 });
@@ -135,7 +135,8 @@ namespace RecruitCatDickendd.Migrations
 
                     b.Property<string>("IndustryName")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.HasKey("IndustryId");
 
@@ -161,7 +162,8 @@ namespace RecruitCatDickendd.Migrations
 
                     b.Property<string>("Title")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.HasKey("JobTitleId");
 
@@ -171,20 +173,16 @@ namespace RecruitCatDickendd.Migrations
             modelBuilder.Entity("RecruitCatDickendd.Models.Candidate", b =>
                 {
                     b.HasOne("RecruitCatDickendd.Models.Company", "Company")
-                        .WithMany("Candidates")
+                        .WithMany()
                         .HasForeignKey("CompanyId");
 
                     b.HasOne("RecruitCatDickendd.Models.Industry", "Industry")
                         .WithMany("Candidates")
-                        .HasForeignKey("IndustryId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("IndustryId");
 
                     b.HasOne("RecruitCatDickendd.Models.JobTitle", "JobTitle")
                         .WithMany("Candidates")
-                        .HasForeignKey("JobTitleId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("JobTitleId");
 
                     b.Navigation("Company");
 
@@ -201,12 +199,15 @@ namespace RecruitCatDickendd.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Industry");
-                });
+                    b.HasOne("RecruitCatDickendd.Models.JobTitle", "JobTitle")
+                        .WithMany()
+                        .HasForeignKey("JobTitleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
-            modelBuilder.Entity("RecruitCatDickendd.Models.Company", b =>
-                {
-                    b.Navigation("Candidates");
+                    b.Navigation("Industry");
+
+                    b.Navigation("JobTitle");
                 });
 
             modelBuilder.Entity("RecruitCatDickendd.Models.Industry", b =>

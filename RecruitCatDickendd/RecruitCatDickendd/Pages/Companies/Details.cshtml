@@ -5,10 +5,9 @@
     ViewData["Title"] = "Details";
 }
 
-<h1>Details</h1>
+<h1>Company Information</h1>
 
 <div>
-    <h4>Company</h4>
     <hr />
     <dl class="row">
         <dt class="col-sm-2">
@@ -18,22 +17,10 @@
             @Html.DisplayFor(model => model.Company.CompanyName)
         </dd>
         <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Company.PositionName)
+            @Html.DisplayNameFor(model => model.Company.JobTitle)
         </dt>
         <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Company.PositionName)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Company.SalaryMinimum)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Company.SalaryMinimum)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Company.SalaryMaximum)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Company.SalaryMaximum)
+            @Html.DisplayFor(model => model.Company.JobTitle.JobTitleId)
         </dd>
         <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Company.StartDate)

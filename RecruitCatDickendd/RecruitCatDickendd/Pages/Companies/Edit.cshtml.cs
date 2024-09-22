@@ -37,6 +37,7 @@ namespace RecruitCatDickendd.Pages.Companies
             }
             Company = company;
            ViewData["IndustryId"] = new SelectList(_context.Industry, "IndustryId", "IndustryId");
+           ViewData["JobTitleId"] = new SelectList(_context.JobTitle, "JobTitleId", "JobTitleId");
             return Page();
         }
 

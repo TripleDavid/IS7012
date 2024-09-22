@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace RecruitCatDickendd.Migrations
 {
     /// <inheritdoc />
-    public partial class candidates : Migration
+    public partial class initial : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -17,7 +17,7 @@ namespace RecruitCatDickendd.Migrations
                 {
                     IndustryId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    IndustryName = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    IndustryName = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false)
                 },
                 constraints: table =>
                 {
@@ -30,9 +30,9 @@ namespace RecruitCatDickendd.Migrations
                 {
                     JobTitleId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
+                    Title = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
                     SalaryHigh = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
                     SalaryLow = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
-                    Title = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     CertificationNeeded = table.Column<bool>(type: "bit", nullable: false)
                 },
                 constraints: table =>
@@ -46,12 +46,10 @@ namespace RecruitCatDickendd.Migrations
                 {
                     CompanyId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    CompanyName = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    PositionName = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    SalaryMinimum = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
-                    SalaryMaximum = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
+                    CompanyName = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
+                    JobTitleId = table.Column<int>(type: "int", nullable: false),
                     StartDate = table.Column<DateTime>(type: "datetime2", nullable: true),
-                    Location = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Location = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
                     IndustryId = table.Column<int>(type: "int", nullable: false),
                     SigningBonus = table.Column<decimal>(type: "decimal(18,2)", nullable: true)
                 },
@@ -64,6 +62,12 @@ namespace RecruitCatDickendd.Migrations
                         principalTable: "Industry",
                         principalColumn: "IndustryId",
                         onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_Company_JobTitle_JobTitleId",
+                        column: x => x.JobTitleId,
+                        principalTable: "JobTitle",
+                        principalColumn: "JobTitleId",
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -72,19 +76,19 @@ namespace RecruitCatDickendd.Migrations
                 {
                     CandidateId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    FirstName = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    LastName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    FirstName = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
+                    LastName = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
                     YearsExperience = table.Column<int>(type: "int", nullable: false),
                     HasDegree = table.Column<bool>(type: "bit", nullable: false),
                     TargetSalary = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
                     StartDate = table.Column<DateTime>(type: "datetime2", nullable: true),
-                    JobTitleId = table.Column<int>(type: "int", nullable: false),
+                    JobTitleId = table.Column<int>(type: "int", nullable: true),
                     CompanyId = table.Column<int>(type: "int", nullable: true),
-                    IndustryId = table.Column<int>(type: "int", nullable: false),
+                    IndustryId = table.Column<int>(type: "int", nullable: true),
                     IsEmployed = table.Column<bool>(type: "bit", nullable: false),
                     WillRelocate = table.Column<bool>(type: "bit", nullable: false),
                     JobSearchStartDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    CurrentTitle = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    CurrentTitle = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false)
                 },
                 constraints: table =>
                 {
@@ -98,14 +102,12 @@ namespace RecruitCatDickendd.Migrations
                         name: "FK_Candidate_Industry_IndustryId",
                         column: x => x.IndustryId,
                         principalTable: "Industry",
-                        principalColumn: "IndustryId",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "IndustryId");
                     table.ForeignKey(
                         name: "FK_Candidate_JobTitle_JobTitleId",
                         column: x => x.JobTitleId,
                         principalTable: "JobTitle",
-                        principalColumn: "JobTitleId",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "JobTitleId");
                 });
 
             migrationBuilder.CreateIndex(
@@ -127,6 +129,11 @@ namespace RecruitCatDickendd.Migrations
                 name: "IX_Company_IndustryId",
                 table: "Company",
                 column: "IndustryId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Company_JobTitleId",
+                table: "Company",
+                column: "JobTitleId");
         }
 
         /// <inheritdoc />
@@ -139,10 +146,10 @@ namespace RecruitCatDickendd.Migrations
                 name: "Company");
 
             migrationBuilder.DropTable(
-                name: "JobTitle");
+                name: "Industry");
 
             migrationBuilder.DropTable(
-                name: "Industry");
+                name: "JobTitle");
         }
     }
 }

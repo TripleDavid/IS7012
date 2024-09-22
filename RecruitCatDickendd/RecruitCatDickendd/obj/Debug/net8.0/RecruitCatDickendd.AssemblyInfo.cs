@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RecruitCatDickendd")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+26cafd4903180ac14b7685a221f72b55e347e2be")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3f06a4cb7f2a99875b89aacbc1c3942bdf00671a")]
 [assembly: System.Reflection.AssemblyProductAttribute("RecruitCatDickendd")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RecruitCatDickendd")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

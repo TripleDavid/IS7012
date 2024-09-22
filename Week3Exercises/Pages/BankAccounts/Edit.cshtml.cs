@@ -30,13 +30,14 @@ namespace Week3Exercises.Pages.BankAccounts
                 return NotFound();
             }
 
-            var bankaccount =  await _context.BankAccount.FirstOrDefaultAsync(m => m.BankAccountId == id);
+            var bankaccount =  await _context.BankAccount
+                .FirstOrDefaultAsync(m => m.BankAccountId == id);
             if (bankaccount == null)
             {
                 return NotFound();
             }
             BankAccount = bankaccount;
-           ViewData["AccountHolderId"] = new SelectList(_context.AccountHolder, "AccountHolderId", "AccountHolderId");
+           ViewData["AccountHolderId"] = new SelectList(_context.AccountHolder, "AccountHolderId", "FullName");
             return Page();
         }
 

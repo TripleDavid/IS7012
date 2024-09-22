@@ -28,7 +28,9 @@ namespace Week3Exercises.Pages.AccountHolders
                 return NotFound();
             }
 
-            var accountholder = await _context.AccountHolder.FirstOrDefaultAsync(m => m.AccountHolderId == id);
+            var accountholder = await _context.AccountHolder
+                .Include(x => x.BankAccounts)
+                .FirstOrDefaultAsync(m => m.AccountHolderId == id);
             if (accountholder == null)
             {
                 return NotFound();

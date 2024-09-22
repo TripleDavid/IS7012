@@ -5,12 +5,11 @@
     ViewData["Title"] = "Details";
 }
 
-<h1>Details</h1>
+<h1>Account Holder Detail</h1>
 
 <div>
-    <h4>AccountHolder</h4>
     <hr />
-    <dl class="row">
+        <dl class="row">
         <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.AccountHolder.FirstName)
         </dt>
@@ -43,7 +42,70 @@
         </dd>
     </dl>
 </div>
+@if (Model.AccountHolder.BankAccounts.Any())
+{
+<div>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>@Html.DisplayNameFor(model => model.AccountHolder.BankAccounts[0].AccountNumber)</th>
+                    <th>@Html.DisplayNameFor(model => model.AccountHolder.BankAccounts[0].AccountName)</th>
+                    <th>@Html.DisplayNameFor(model => model.AccountHolder.BankAccounts[0].CurrentBalance)</th>
+                    <th>@Html.DisplayNameFor(model => model.AccountHolder.BankAccounts[0].IsActive)</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.AccountHolder.BankAccounts.Where(x => x.IsActive))
+                {
+                    <tr>
+                        <td>@Html.DisplayFor(modelItem => item.AccountNumber)</td>
+                        <td>@Html.DisplayFor(modelItem => item.AccountName)</td>
+                        <td>@Html.DisplayFor(modelItem => item.CurrentBalance)</td>
+                        <td>@Html.DisplayFor(modelItem => item.IsActive)</td>
+                        <td>
+                            <a asp-page="/BankAccounts/Details" asp-route-id="@item.AccountHolderId">Details</a>
+                        </td>
+                    </tr>
+                }
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th>Total Balance</th>
+                    <th>@Model.AccountHolder.BankAccounts.Where(x => x.IsActive).Sum(x =>x.CurrentBalance).ToString("C2")</th>
+                </tr>
+            </tbody>
+        </table>
+        <strong>@Model.AccountHolder.BankAccounts.Where(x => x.IsActive).Count(x => true) Active Accounts</strong>
+</div>
+    <div>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>@Html.DisplayNameFor(model => model.AccountHolder.BankAccounts[0].AccountNumber)</th>
+                    <th>@Html.DisplayNameFor(model => model.AccountHolder.BankAccounts[0].AccountName)</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.AccountHolder.BankAccounts.Where(x => !x.IsActive))
+                {
+                    <tr>
+                        <td>@Html.DisplayFor(modelItem => item.AccountNumber)</td>
+                        <td>@Html.DisplayFor(modelItem => item.AccountName)</td>
+                        <td>
+                            <a asp-page="/BankAccounts/Details" asp-route-id="@item.AccountHolderId">Details</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+        <strong>@Model.AccountHolder.BankAccounts.Where(x => !x.IsActive).Count(x => true) Closed Accounts</strong>
+    </div>
+}
+else
+{
+    <div class="alert alert-warning">No Bank Accounts Exist for this Account Holder</div>
+}
 <div>
     <a asp-page="./Edit" asp-route-id="@Model.AccountHolder.AccountHolderId">Edit</a> |
     <a asp-page="./Index">Back to List</a>
-</div>
+    </div>

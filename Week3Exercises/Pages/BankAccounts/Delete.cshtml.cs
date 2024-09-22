@@ -29,7 +29,9 @@ namespace Week3Exercises.Pages.BankAccounts
                 return NotFound();
             }
 
-            var bankaccount = await _context.BankAccount.FirstOrDefaultAsync(m => m.BankAccountId == id);
+            var bankaccount = await _context.BankAccount
+                .Include(x => x.AccountHolder)
+                .FirstOrDefaultAsync(m => m.BankAccountId == id);
 
             if (bankaccount == null)
             {

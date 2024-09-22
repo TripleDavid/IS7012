@@ -14,13 +14,13 @@
     <thead>
         <tr>
             <th>
+                @Html.DisplayNameFor(model => model.JobTitle[0].Title)
+            </th>
+            <th>
                 @Html.DisplayNameFor(model => model.JobTitle[0].SalaryHigh)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.JobTitle[0].SalaryLow)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.JobTitle[0].Title)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.JobTitle[0].CertificationNeeded)
@@ -32,13 +32,13 @@
 @foreach (var item in Model.JobTitle) {
         <tr>
             <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
                 @Html.DisplayFor(modelItem => item.SalaryHigh)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.SalaryLow)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Title)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.CertificationNeeded)
