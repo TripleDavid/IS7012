@@ -23,9 +23,6 @@
                 @Html.DisplayNameFor(model => model.Company[0].StartDate)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Company[0].Location)
-            </th>
-            <th>
                 @Html.DisplayNameFor(model => model.Company[0].Industry)
             </th>
             <th>
@@ -41,16 +38,13 @@
                 @Html.DisplayFor(modelItem => item.CompanyName)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.JobTitle.JobTitleId)
+                @Html.DisplayFor(modelItem => item.JobTitle.Title)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.StartDate)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Location)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Industry.IndustryId)
+                @Html.DisplayFor(modelItem => item.Industry.IndustryName)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.SigningBonus)

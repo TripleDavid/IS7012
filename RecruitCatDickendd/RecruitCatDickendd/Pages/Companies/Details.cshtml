@@ -38,7 +38,7 @@
             @Html.DisplayNameFor(model => model.Company.Industry)
         </dt>
         <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Company.Industry.IndustryId)
+            @Html.DisplayFor(model => model.Company.Industry.IndustryName)
         </dd>
         <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Company.SigningBonus)
@@ -47,6 +47,36 @@
             @Html.DisplayFor(model => model.Company.SigningBonus)
         </dd>
     </dl>
+</div>
+
+<h3>Candidates Associated with this Company</h3>
+<div>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.Company.Candidates[0].FullName)</th>
+                <th>@Html.DisplayNameFor(model => model.Company.Candidates[0].TargetSalary)</th>
+                <th>@Html.DisplayNameFor(model => model.Company.Candidates[0].Industry)</th>
+                <th>@Html.DisplayNameFor(model => model.Company.Candidates[0].JobSearchStartDate)</th>
+                <th>@Html.DisplayNameFor(model => model.Company.Candidates[0].StartDate)</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.Company.Candidates)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(modelItem => item.FullName)</td>
+                    <td>@Html.DisplayFor(modelItem => item.TargetSalary)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Industry.IndustryName)</td>
+                    <td>@Html.DisplayFor(modelItem => item.JobSearchStartDate)</td>
+                    <td>@Html.DisplayFor(modelItem => item.StartDate)</td>
+                    <td>
+                        <a asp-page="/Candidates/Details" asp-route-id="@item.CandidateId">Details</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
 </div>
 <div>
     <a asp-page="./Edit" asp-route-id="@Model.Company.CompanyId">Edit</a> |

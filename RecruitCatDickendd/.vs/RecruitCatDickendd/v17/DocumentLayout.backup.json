@@ -1,7 +1,68 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\Data\\UC\\IS 7012\\IS7012\\IS7012\\RecruitCatDickendd\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{700EF566-03D9-4243-92DC-DCD0201F7271}|RecruitCatDickendd\\RecruitCatDickendd.csproj|d:\\data\\uc\\is 7012\\is7012\\is7012\\recruitcatdickendd\\recruitcatdickendd\\pages\\companies\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{700EF566-03D9-4243-92DC-DCD0201F7271}|RecruitCatDickendd\\RecruitCatDickendd.csproj|solutionrelative:recruitcatdickendd\\pages\\companies\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{700EF566-03D9-4243-92DC-DCD0201F7271}|RecruitCatDickendd\\RecruitCatDickendd.csproj|d:\\data\\uc\\is 7012\\is7012\\is7012\\recruitcatdickendd\\recruitcatdickendd\\pages\\companies\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{700EF566-03D9-4243-92DC-DCD0201F7271}|RecruitCatDickendd\\RecruitCatDickendd.csproj|solutionrelative:recruitcatdickendd\\pages\\companies\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{700EF566-03D9-4243-92DC-DCD0201F7271}|RecruitCatDickendd\\RecruitCatDickendd.csproj|d:\\data\\uc\\is 7012\\is7012\\is7012\\recruitcatdickendd\\recruitcatdickendd\\pages\\companies\\details.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{700EF566-03D9-4243-92DC-DCD0201F7271}|RecruitCatDickendd\\RecruitCatDickendd.csproj|solutionrelative:recruitcatdickendd\\pages\\companies\\details.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{700EF566-03D9-4243-92DC-DCD0201F7271}|RecruitCatDickendd\\RecruitCatDickendd.csproj|d:\\data\\uc\\is 7012\\is7012\\is7012\\recruitcatdickendd\\recruitcatdickendd\\models\\company.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{700EF566-03D9-4243-92DC-DCD0201F7271}|RecruitCatDickendd\\RecruitCatDickendd.csproj|solutionrelative:recruitcatdickendd\\models\\company.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{700EF566-03D9-4243-92DC-DCD0201F7271}|RecruitCatDickendd\\RecruitCatDickendd.csproj|d:\\data\\uc\\is 7012\\is7012\\is7012\\recruitcatdickendd\\recruitcatdickendd\\models\\industry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{700EF566-03D9-4243-92DC-DCD0201F7271}|RecruitCatDickendd\\RecruitCatDickendd.csproj|solutionrelative:recruitcatdickendd\\models\\industry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{700EF566-03D9-4243-92DC-DCD0201F7271}|RecruitCatDickendd\\RecruitCatDickendd.csproj|d:\\data\\uc\\is 7012\\is7012\\is7012\\recruitcatdickendd\\recruitcatdickendd\\models\\candidate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{700EF566-03D9-4243-92DC-DCD0201F7271}|RecruitCatDickendd\\RecruitCatDickendd.csproj|solutionrelative:recruitcatdickendd\\models\\candidate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{700EF566-03D9-4243-92DC-DCD0201F7271}|RecruitCatDickendd\\RecruitCatDickendd.csproj|d:\\data\\uc\\is 7012\\is7012\\is7012\\recruitcatdickendd\\recruitcatdickendd\\pages\\companies\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{700EF566-03D9-4243-92DC-DCD0201F7271}|RecruitCatDickendd\\RecruitCatDickendd.csproj|solutionrelative:recruitcatdickendd\\pages\\companies\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{700EF566-03D9-4243-92DC-DCD0201F7271}|RecruitCatDickendd\\RecruitCatDickendd.csproj|d:\\data\\uc\\is 7012\\is7012\\is7012\\recruitcatdickendd\\recruitcatdickendd\\pages\\companies\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{700EF566-03D9-4243-92DC-DCD0201F7271}|RecruitCatDickendd\\RecruitCatDickendd.csproj|solutionrelative:recruitcatdickendd\\pages\\companies\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{700EF566-03D9-4243-92DC-DCD0201F7271}|RecruitCatDickendd\\RecruitCatDickendd.csproj|d:\\data\\uc\\is 7012\\is7012\\is7012\\recruitcatdickendd\\recruitcatdickendd\\pages\\companies\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{700EF566-03D9-4243-92DC-DCD0201F7271}|RecruitCatDickendd\\RecruitCatDickendd.csproj|solutionrelative:recruitcatdickendd\\pages\\companies\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{700EF566-03D9-4243-92DC-DCD0201F7271}|RecruitCatDickendd\\RecruitCatDickendd.csproj|d:\\data\\uc\\is 7012\\is7012\\is7012\\recruitcatdickendd\\recruitcatdickendd\\pages\\companies\\delete.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{700EF566-03D9-4243-92DC-DCD0201F7271}|RecruitCatDickendd\\RecruitCatDickendd.csproj|solutionrelative:recruitcatdickendd\\pages\\companies\\delete.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{700EF566-03D9-4243-92DC-DCD0201F7271}|RecruitCatDickendd\\RecruitCatDickendd.csproj|d:\\data\\uc\\is 7012\\is7012\\is7012\\recruitcatdickendd\\recruitcatdickendd\\pages\\candidates\\details.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{700EF566-03D9-4243-92DC-DCD0201F7271}|RecruitCatDickendd\\RecruitCatDickendd.csproj|solutionrelative:recruitcatdickendd\\pages\\candidates\\details.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{700EF566-03D9-4243-92DC-DCD0201F7271}|RecruitCatDickendd\\RecruitCatDickendd.csproj|d:\\data\\uc\\is 7012\\is7012\\is7012\\recruitcatdickendd\\recruitcatdickendd\\pages\\candidates\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{700EF566-03D9-4243-92DC-DCD0201F7271}|RecruitCatDickendd\\RecruitCatDickendd.csproj|solutionrelative:recruitcatdickendd\\pages\\candidates\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{700EF566-03D9-4243-92DC-DCD0201F7271}|RecruitCatDickendd\\RecruitCatDickendd.csproj|d:\\data\\uc\\is 7012\\is7012\\is7012\\recruitcatdickendd\\recruitcatdickendd\\pages\\companies\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{700EF566-03D9-4243-92DC-DCD0201F7271}|RecruitCatDickendd\\RecruitCatDickendd.csproj|solutionrelative:recruitcatdickendd\\pages\\companies\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{700EF566-03D9-4243-92DC-DCD0201F7271}|RecruitCatDickendd\\RecruitCatDickendd.csproj|d:\\data\\uc\\is 7012\\is7012\\is7012\\recruitcatdickendd\\recruitcatdickendd\\models\\jobtitle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{700EF566-03D9-4243-92DC-DCD0201F7271}|RecruitCatDickendd\\RecruitCatDickendd.csproj|solutionrelative:recruitcatdickendd\\models\\jobtitle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{700EF566-03D9-4243-92DC-DCD0201F7271}|RecruitCatDickendd\\RecruitCatDickendd.csproj|d:\\data\\uc\\is 7012\\is7012\\is7012\\recruitcatdickendd\\recruitcatdickendd\\pages\\industries\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{700EF566-03D9-4243-92DC-DCD0201F7271}|RecruitCatDickendd\\RecruitCatDickendd.csproj|solutionrelative:recruitcatdickendd\\pages\\industries\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +70,206 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\Data\\UC\\IS 7012\\IS7012\\IS7012\\RecruitCatDickendd\\RecruitCatDickendd\\Pages\\Companies\\Edit.cshtml",
+              "RelativeDocumentMoniker": "RecruitCatDickendd\\Pages\\Companies\\Edit.cshtml",
+              "ToolTip": "D:\\Data\\UC\\IS 7012\\IS7012\\IS7012\\RecruitCatDickendd\\RecruitCatDickendd\\Pages\\Companies\\Edit.cshtml",
+              "RelativeToolTip": "RecruitCatDickendd\\Pages\\Companies\\Edit.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACAAAABVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-22T23:29:19.61Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\Data\\UC\\IS 7012\\IS7012\\IS7012\\RecruitCatDickendd\\RecruitCatDickendd\\Pages\\Companies\\Create.cshtml",
+              "RelativeDocumentMoniker": "RecruitCatDickendd\\Pages\\Companies\\Create.cshtml",
+              "ToolTip": "D:\\Data\\UC\\IS 7012\\IS7012\\IS7012\\RecruitCatDickendd\\RecruitCatDickendd\\Pages\\Companies\\Create.cshtml",
+              "RelativeToolTip": "RecruitCatDickendd\\Pages\\Companies\\Create.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAB8AAABWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-22T23:27:49.771Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Details.cshtml.cs",
+              "DocumentMoniker": "D:\\Data\\UC\\IS 7012\\IS7012\\IS7012\\RecruitCatDickendd\\RecruitCatDickendd\\Pages\\Companies\\Details.cshtml.cs",
+              "RelativeDocumentMoniker": "RecruitCatDickendd\\Pages\\Companies\\Details.cshtml.cs",
+              "ToolTip": "D:\\Data\\UC\\IS 7012\\IS7012\\IS7012\\RecruitCatDickendd\\RecruitCatDickendd\\Pages\\Companies\\Details.cshtml.cs",
+              "RelativeToolTip": "RecruitCatDickendd\\Pages\\Companies\\Details.cshtml.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB8AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T23:24:51.898Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Delete.cshtml.cs",
+              "DocumentMoniker": "D:\\Data\\UC\\IS 7012\\IS7012\\IS7012\\RecruitCatDickendd\\RecruitCatDickendd\\Pages\\Companies\\Delete.cshtml.cs",
+              "RelativeDocumentMoniker": "RecruitCatDickendd\\Pages\\Companies\\Delete.cshtml.cs",
+              "ToolTip": "D:\\Data\\UC\\IS 7012\\IS7012\\IS7012\\RecruitCatDickendd\\RecruitCatDickendd\\Pages\\Companies\\Delete.cshtml.cs",
+              "RelativeToolTip": "RecruitCatDickendd\\Pages\\Companies\\Delete.cshtml.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwCAAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T23:24:22.409Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Company.cs",
+              "DocumentMoniker": "D:\\Data\\UC\\IS 7012\\IS7012\\IS7012\\RecruitCatDickendd\\RecruitCatDickendd\\Models\\Company.cs",
+              "RelativeDocumentMoniker": "RecruitCatDickendd\\Models\\Company.cs",
+              "ToolTip": "D:\\Data\\UC\\IS 7012\\IS7012\\IS7012\\RecruitCatDickendd\\RecruitCatDickendd\\Models\\Company.cs",
+              "RelativeToolTip": "RecruitCatDickendd\\Models\\Company.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAIwCcAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T23:10:43.979Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Candidate.cs",
+              "DocumentMoniker": "D:\\Data\\UC\\IS 7012\\IS7012\\IS7012\\RecruitCatDickendd\\RecruitCatDickendd\\Models\\Candidate.cs",
+              "RelativeDocumentMoniker": "RecruitCatDickendd\\Models\\Candidate.cs",
+              "ToolTip": "D:\\Data\\UC\\IS 7012\\IS7012\\IS7012\\RecruitCatDickendd\\RecruitCatDickendd\\Models\\Candidate.cs",
+              "RelativeToolTip": "RecruitCatDickendd\\Models\\Candidate.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAIwAgAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T23:11:25.455Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Industry.cs",
+              "DocumentMoniker": "D:\\Data\\UC\\IS 7012\\IS7012\\IS7012\\RecruitCatDickendd\\RecruitCatDickendd\\Models\\Industry.cs",
+              "RelativeDocumentMoniker": "RecruitCatDickendd\\Models\\Industry.cs",
+              "ToolTip": "D:\\Data\\UC\\IS 7012\\IS7012\\IS7012\\RecruitCatDickendd\\RecruitCatDickendd\\Models\\Industry.cs",
+              "RelativeToolTip": "RecruitCatDickendd\\Models\\Industry.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T23:06:47.947Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\Data\\UC\\IS 7012\\IS7012\\IS7012\\RecruitCatDickendd\\RecruitCatDickendd\\Pages\\Companies\\Delete.cshtml",
+              "RelativeDocumentMoniker": "RecruitCatDickendd\\Pages\\Companies\\Delete.cshtml",
+              "ToolTip": "D:\\Data\\UC\\IS 7012\\IS7012\\IS7012\\RecruitCatDickendd\\RecruitCatDickendd\\Pages\\Companies\\Delete.cshtml",
+              "RelativeToolTip": "RecruitCatDickendd\\Pages\\Companies\\Delete.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACoAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-22T23:25:41.778Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\Data\\UC\\IS 7012\\IS7012\\IS7012\\RecruitCatDickendd\\RecruitCatDickendd\\Pages\\Companies\\Details.cshtml",
+              "RelativeDocumentMoniker": "RecruitCatDickendd\\Pages\\Companies\\Details.cshtml",
+              "ToolTip": "D:\\Data\\UC\\IS 7012\\IS7012\\IS7012\\RecruitCatDickendd\\RecruitCatDickendd\\Pages\\Companies\\Details.cshtml",
+              "RelativeToolTip": "RecruitCatDickendd\\Pages\\Companies\\Details.cshtml",
+              "ViewState": "AgIAACgAAAAAAAAAAAAiwE4AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-22T23:25:19.76Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Data\\UC\\IS 7012\\IS7012\\IS7012\\RecruitCatDickendd\\RecruitCatDickendd\\Pages\\Companies\\Index.cshtml",
+              "RelativeDocumentMoniker": "RecruitCatDickendd\\Pages\\Companies\\Index.cshtml",
+              "ToolTip": "D:\\Data\\UC\\IS 7012\\IS7012\\IS7012\\RecruitCatDickendd\\RecruitCatDickendd\\Pages\\Companies\\Index.cshtml",
+              "RelativeToolTip": "RecruitCatDickendd\\Pages\\Companies\\Index.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACwAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-22T23:30:06.891Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Details.cshtml.cs",
+              "DocumentMoniker": "D:\\Data\\UC\\IS 7012\\IS7012\\IS7012\\RecruitCatDickendd\\RecruitCatDickendd\\Pages\\Candidates\\Details.cshtml.cs",
+              "RelativeDocumentMoniker": "RecruitCatDickendd\\Pages\\Candidates\\Details.cshtml.cs",
+              "ToolTip": "D:\\Data\\UC\\IS 7012\\IS7012\\IS7012\\RecruitCatDickendd\\RecruitCatDickendd\\Pages\\Candidates\\Details.cshtml.cs",
+              "RelativeToolTip": "RecruitCatDickendd\\Pages\\Candidates\\Details.cshtml.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwCAAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T23:22:04.979Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\Data\\UC\\IS 7012\\IS7012\\IS7012\\RecruitCatDickendd\\RecruitCatDickendd\\Pages\\Candidates\\Details.cshtml",
+              "RelativeDocumentMoniker": "RecruitCatDickendd\\Pages\\Candidates\\Details.cshtml",
+              "ToolTip": "D:\\Data\\UC\\IS 7012\\IS7012\\IS7012\\RecruitCatDickendd\\RecruitCatDickendd\\Pages\\Candidates\\Details.cshtml",
+              "RelativeToolTip": "RecruitCatDickendd\\Pages\\Candidates\\Details.cshtml",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAAEAAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-22T23:21:12.212Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "JobTitle.cs",
+              "DocumentMoniker": "D:\\Data\\UC\\IS 7012\\IS7012\\IS7012\\RecruitCatDickendd\\RecruitCatDickendd\\Models\\JobTitle.cs",
+              "RelativeDocumentMoniker": "RecruitCatDickendd\\Models\\JobTitle.cs",
+              "ToolTip": "D:\\Data\\UC\\IS 7012\\IS7012\\IS7012\\RecruitCatDickendd\\RecruitCatDickendd\\Models\\JobTitle.cs",
+              "RelativeToolTip": "RecruitCatDickendd\\Models\\JobTitle.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwAoAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T23:11:53.555Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Create.cshtml.cs",
+              "DocumentMoniker": "D:\\Data\\UC\\IS 7012\\IS7012\\IS7012\\RecruitCatDickendd\\RecruitCatDickendd\\Pages\\Companies\\Create.cshtml.cs",
+              "RelativeDocumentMoniker": "RecruitCatDickendd\\Pages\\Companies\\Create.cshtml.cs",
+              "ToolTip": "D:\\Data\\UC\\IS 7012\\IS7012\\IS7012\\RecruitCatDickendd\\RecruitCatDickendd\\Pages\\Companies\\Create.cshtml.cs",
+              "RelativeToolTip": "RecruitCatDickendd\\Pages\\Companies\\Create.cshtml.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAowCIAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T22:58:05.073Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Create.cshtml.cs",
+              "DocumentMoniker": "D:\\Data\\UC\\IS 7012\\IS7012\\IS7012\\RecruitCatDickendd\\RecruitCatDickendd\\Pages\\Industries\\Create.cshtml.cs",
+              "RelativeDocumentMoniker": "RecruitCatDickendd\\Pages\\Industries\\Create.cshtml.cs",
+              "ToolTip": "D:\\Data\\UC\\IS 7012\\IS7012\\IS7012\\RecruitCatDickendd\\RecruitCatDickendd\\Pages\\Industries\\Create.cshtml.cs",
+              "RelativeToolTip": "RecruitCatDickendd\\Pages\\Industries\\Create.cshtml.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAcwCAAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T22:58:05.078Z",
+              "EditorCaption": ""
             }
           ]
         }

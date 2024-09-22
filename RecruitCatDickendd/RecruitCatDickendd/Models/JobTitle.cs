@@ -8,9 +8,10 @@ namespace RecruitCatDickendd.Models
     {
         public int JobTitleId { get; set; }
 
+        [Required]
         [StringLength(50, MinimumLength = 2, ErrorMessage = "Please ensure the Title has been properly entered")]
         public string Title { get; set; }
-        [Required]
+
 
         [DisplayName("Highest Salary")]
         [Range(10000, 10000000)]

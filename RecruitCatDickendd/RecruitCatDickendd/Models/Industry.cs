@@ -9,8 +9,8 @@
 
         [DisplayName("Industry")]
         [StringLength(50, MinimumLength = 2, ErrorMessage = "Please ensure the Industry has been properly entered")]
-        public string IndustryName { get; set; }
         [Required]
+        public string IndustryName { get; set; }
 
         public List<Candidate>? Candidates { get; set; }
 

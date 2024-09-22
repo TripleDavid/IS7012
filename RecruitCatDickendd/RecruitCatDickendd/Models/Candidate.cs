@@ -6,15 +6,15 @@
     {
         public int CandidateId { get; set; }
 
+        [Required]
         [DisplayName("First Name")]
         [StringLength(50, MinimumLength = 2, ErrorMessage = "Please ensure the First Name has been properly entered")]
         public string FirstName { get; set; }
-        [Required]
 
-        [DisplayName("Last Name")]
+        [Required]
+                [DisplayName("Last Name")]
         [StringLength(50, MinimumLength = 2, ErrorMessage = "Please ensure the Last Name has been properly entered")]
         public string LastName { get; set; }
-        [Required]
 
         [DisplayName("Full Name")]
         public string FullName

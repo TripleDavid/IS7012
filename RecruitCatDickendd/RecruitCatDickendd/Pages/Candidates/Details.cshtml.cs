@@ -28,7 +28,11 @@ namespace RecruitCatDickendd.Pages.Candidates
                 return NotFound();
             }
 
-            var candidate = await _context.Candidate.FirstOrDefaultAsync(m => m.CandidateId == id);
+            var candidate = await _context.Candidate
+                .Include(x => x.JobTitle)
+                .Include(x => x.Industry)
+                .Include(x => x.Company)
+                .FirstOrDefaultAsync(m => m.CandidateId == id);
             if (candidate == null)
             {
                 return NotFound();
